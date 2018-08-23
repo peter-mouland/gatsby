@@ -315,7 +315,7 @@ The latest version of Gatsby uses Babel 7, which introduced [a new behavior for 
 
 [This GitHub comment](https://github.com/facebook/jest/issues/1468#issuecomment-361260279) documents the steps needed to do that.
 
-More information on Gatsby and Babel configuration available [here](/docs/babel/#how-to-use-a-custom-babelrc-file).
+More information on Gatsby and Babel configuration available [here](https://next.gatsbyjs.org/docs/babel/#how-to-use-a-custom-babelrc-file).
 
 ### Restore v1 PostCSS Plugin Setup
 
@@ -572,7 +572,7 @@ Similar to `replaceRouterComponent`, we no longer support custom histories so th
 
 ### Browser API `wrapRootComponent` was replaced with `wrapRootElement`
 
-Use new [`wrapRootElement`](/docs/browser-apis/#wrapRootComponent) API:
+Use new [`wrapRootElement`](https://next.gatsbyjs.org/docs/browser-apis/#wrapRootComponent) API:
 We now pass `component` Element instead of `Root` Component and expect that `wrapRootElement` will return Element and not Component. This change was needed to keep all wrapping APIs uniform.
 
 ```diff
@@ -671,7 +671,7 @@ export default ({ children }) => (
 )
 ```
 
-TODO: add a code snippet that uses [`onCreateWebpackConfig`](/docs/node-apis/#onCreateWebpackConfig) to revert to Gatsby's v1 behaviour.
+TODO: add a code snippet that uses [`onCreateWebpackConfig`](https://next.gatsbyjs.org/docs/node-apis/#onCreateWebpackConfig) to revert to Gatsby's v1 behaviour.
 
 ## Resolving Deprecations
 
@@ -729,7 +729,7 @@ export const query = graphql`
 
 `boundActionCreators` is deprecated in v2. You can continue using it, but it’s recommended that you rename it to `actions`.
 
-> TODO: document new actions - see [actions](/docs/actions)
+> TODO: document new actions - see [actions](https://next.gatsbyjs.org/docs/actions)
 
 ### Rename `pathContext` to `pageContext`
 
@@ -829,7 +829,7 @@ See an example in [this PR that upgrades the `using-remark` site to Gatsby v2](h
 
 ### Remove explicit polyfills
 
-If your Gatsby v1 site included any polyfills, you can remove them. Gatsby v2 ships with babel 7 and is configured to automatically include polyfills for your code. See [Gatsby's babel docs for more details](/docs/babel).
+If your Gatsby v1 site included any polyfills, you can remove them. Gatsby v2 ships with babel 7 and is configured to automatically include polyfills for your code. See [Gatsby's babel docs for more details](https://next.gatsbyjs.org/docs/babel).
 
 > Note: This works for your own code, but is not yet implemented for code imported from `node_modules`. Track progress of this feature at [bullet 5 of this issue](https://github.com/gatsbyjs/gatsby/issues/3870).
 
@@ -849,7 +849,7 @@ In most cases you won't have to do anything to be v2 compatible, however there a
 
 ### Change `modifyBabelrc` to `onCreateBabelConfig`
 
-`modifyBabelrc` was renamed to [`onCreateBabelConfig`](/docs/node-apis/#modifyBabelrc) to bring it in line with the rest of Gatsby's API names.
+`modifyBabelrc` was renamed to [`onCreateBabelConfig`](https://next.gatsbyjs.org/docs/node-apis/#modifyBabelrc) to bring it in line with the rest of Gatsby's API names.
 
 Use `onCreateBabelConfig`:
 
@@ -866,13 +866,13 @@ Use `onCreateBabelConfig`:
 }
 ```
 
-Note usage of the new [`setBabelPlugin` action](/docs/actions/#setBabelPlugins).
+Note usage of the new [`setBabelPlugin` action](https://next.gatsbyjs.org/docs/actions/#setBabelPlugins).
 
-See [Gatsby's babel docs for more details](/docs/babel) about configuring babel.
+See [Gatsby's babel docs for more details](https://next.gatsbyjs.org/docs/babel/) about configuring babel.
 
 ### Change `modifyWebpackConfig` to `onCreateWebpackConfig`
 
-`modifyWebpackConfig` was renamed to [`onCreateWebpackConfig`](/docs/node-apis/#onCreateWebpackConfig) to bring it in line with the rest of Gatsby's API names.
+`modifyWebpackConfig` was renamed to [`onCreateWebpackConfig`](https://next.gatsbyjs.org/docs/node-apis/#onCreateWebpackConfig) to bring it in line with the rest of Gatsby's API names.
 
 Use `onCreateWebpackConfig`:
 
@@ -892,9 +892,9 @@ Use `onCreateWebpackConfig`:
 }
 ```
 
-Note usage of the new [`setWebpackConfig` action](/docs/actions/#setWebpackConfig).
+Note usage of the new [`setWebpackConfig` action](https://next.gatsbyjs.org/docs/actions/#setWebpackConfig).
 
-See [Gatsby's webpack docs for more details](/docs/add-custom-webpack-config) about configuring webpack.
+See [Gatsby's webpack docs for more details](https://next.gatsbyjs.org/docs/add-custom-webpack-config) about configuring webpack.
 
 ### createRemoteFileNode
 
